@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+  
   <head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="image/favicon.ico" type = "image/x-icon" rel="icon"/>
     <title>Meeting Notes 10/9/2022</title>
-    
+    <link rel="stylesheet" href="mystyle.css">
   </head>
   <body>
     <header>
-        <div>Meeting <span>10/9/2022</span></div>
+        <div class="header">Meeting <span>10/9/2022</span></div>
         <nav>
             <ul>
                 <li><a href="#attendance">Attendance</a></li>
@@ -26,7 +27,7 @@
         <hr>
         <section>
             <h2 id="attendance">Attendance</h2>
-            <ul>
+            <ul class="attendance">
                 <li><input type="checkbox" /> Person A </li>
                 <li><input type="checkbox" /> Person B </li>
                 <li><input type="checkbox" /> Person C </li>
@@ -38,7 +39,7 @@
         <hr>
         <section>
             <h2 id="agenda"> Agenda </h2>
-            <ol>
+            <ol class="agenda">
                 <li>Brainstorming</li>
                 <li>check-ins</li>
                 <li>documentation</li>
@@ -49,15 +50,15 @@
             <h2 id="brainstorming">Brainstorming</h2>
             <h3> Ideas </h3>
                 <details>
-                    <Summary><b>Person A: </b> We can design grocery store shopping App.</Summary>
+                    <Summary><b class="pa">Person A: </b> We can design grocery store shopping App.</Summary>
                     <p>We can design a shopping App that enables users to find products in store faster.</p>
                 </details>
                 <details>
-                    <Summary><b>Person B: </b> We can design a networking App.</Summary>
+                    <Summary><b class="pb">Person B: </b> We can design a networking App.</Summary>
                     <p>We can design a networking App for <i>UCSD</i> students.</p>
                 </details>
                 <details>
-                    <Summary><b>Person C: </b> We can design a map App.</Summary>
+                    <Summary><b class="pc">Person C: </b> We can design a map App.</Summary>
                     <p>We can add an interactive map feature in <em>UCSD App</em> that helps users find buildings and rooms faster.</p>
                 </details>
         </section>
@@ -67,7 +68,7 @@
             <ul>
                 <li>
                     <p>Calming music</p>
-                    <audio controls>
+                    <audio controls id="audio1">
                     <source src="calm.mp3" type="audio/mp3">
                     Your browser does not support the audio tag.
                     </audio>

@@ -1,0 +1,135 @@
+/*stylesheet for index.html*/
+* {
+    font-family: 'Comic Neue', cursive;
+}
+h1 {
+    color: rgb(167, 55, 74);
+    font-size: 40px;
+}
+
+h2 {
+    text-decoration: rgb(207, 179, 205) wavy underline;
+    font-size: 30px;
+}
+h2, h3{
+    color: #054c4c;
+}
+h3 {
+    font-size: 20px;
+}
+
+a{
+    font-size: 1.5em;
+    color: rgb(111, 107, 118);
+}
+
+li{
+    font-size: 1em;
+    position: relative;
+}
+li:hover {
+    background-color: pink;
+}
+
+summary{
+    font-size: 1.8em;
+    text-align: left;
+}
+
+label {
+    color: hsl(197, 31%, 31%);
+    margin: auto;
+}
+
+body {
+    background-color: rgb(248, 238, 255);
+}
+
+video {
+    background-color: lightgrey;
+    width: 1000px;
+    border: 15px solid rgb(224, 211, 235);
+    padding: 10px;
+    margin: 10px;
+}
+
+#audio1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    margin-left: 8px;
+
+    border-style: dashed;
+    border-color: black;
+    border-width: 5px;
+    border-radius: 10px;
+
+    padding-left: 1ch;
+    padding-right: 1ch;
+
+}
+
+.pa{
+    display:inline;
+}
+.pb{
+    display: block;
+}
+
+textarea {
+    height: 100px;
+    width: 600px;
+    max-width: 200%;
+    min-width: 100%;
+    position: static;
+}
+
+button:active {
+    background-color: rgb(197, 160, 235);
+}
+
+.attendance {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.agenda {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 50px;
+    grid-gap: 10px;
+}
+
+@media (min-width: 30em) and (max-width: 80em){
+    body{
+        background:rgb(227, 234, 208);
+    }
+}
+
+h2[id="brainstorming"] {
+    color:rgb(51, 23, 28);
+}
+
+ol li{
+    color:hsl(197, 31%, 31%);
+}
+
+ul > li{
+    color:rgb(27, 77, 54);
+}
+
+Summary ~ p{
+    background-color: antiquewhite;
+}
+
+Summary + b{
+    background-color:rgb(224, 211, 235);
+}
+
+header.header{
+    color:rgb(167, 55, 74);
+}
